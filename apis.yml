@@ -1,7 +1,24 @@
 aid: bluevoyant
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bluevoyant.png
 name: Bluevoyant
-description: Bluevoyant is a company surfaced as a portfolio company of 8vc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: BlueVoyant is a cyber defense company that combines managed detection and response
+  (MDR), digital risk protection, and supply-chain (third-party) cyber risk management into a
+  cloud-native platform backed by a global security operations capability. It continuously monitors
+  customers' internal networks, endpoints, and cloud along with their external attack surface and
+  vendor ecosystem, using threat intelligence to detect, investigate, and remediate threats. BlueVoyant
+  serves enterprises and governments across sectors and was added to the API Evangelist network as a
+  portfolio lead (8vc); this profile is maintained by the enrichment pipeline against public sources.
 url: https://raw.githubusercontent.com/api-evangelist/bluevoyant/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Cybersecurity
+- Managed Detection and Response
+- Threat Intelligence
+- Supply Chain Security
+- Digital Risk Protection
+- Security Operations
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bluevoyant-domain-security.yml
+- type: TrustCenter
+  url: security/bluevoyant-trust-center.yml
+- type: GitHubOrganization
+  url: https://github.com/Bluevoyant
 - type: Website
   url: https://bluevoyant.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

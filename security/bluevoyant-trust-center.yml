@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+source: live probe of trust.bluevoyant.com + DNS CNAME
+url: https://trust.bluevoyant.com/
+provider: Vanta
+# Verified a genuine trust center exists: trust.bluevoyant.com is a CNAME to
+# 68e52645927d8f7f1f2e48d2.cname.vantatrust.com and returns HTTP 200 with the
+# page title "BlueVoyant Trust Center". The report content is rendered by a
+# Vanta client-side SPA, so specific named certifications could not be
+# enumerated verbatim from the page body and are intentionally left empty
+# rather than fabricated. Populate certifications[] on a future pass that can
+# read the Vanta trust-report data.
+certifications: []
+evidence:
+- source: dns
+  kind: cname
+  value: 68e52645927d8f7f1f2e48d2.cname.vantatrust.com
+- source: https://trust.bluevoyant.com/
+  kind: http
+  status: 200
+  title: BlueVoyant Trust Center
