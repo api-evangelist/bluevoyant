@@ -1,0 +1,58 @@
+generated: '2026-10-13'
+method: searched
+checked:
+- https://aws.amazon.com/marketplace/
+- https://azuremarketplace.microsoft.com/
+marketplace_apps: []
+edges:
+- partner_name: AWS Marketplace
+  partner: amazon-web-services
+  partner_match: aggregator
+  type: marketplace
+  marketplace: aws-marketplace
+  channel: distribution
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://aws.amazon.com/marketplace/seller-profile?id=11b4f64a-1103-494d-90b0-46e4c9ccf860
+  listing_count: 3
+  apps:
+  - MDR for Splunk Cloud. Please contact BlueVoyant for Private Offer.
+  - MDR for Splunk with Digital Forensics and Incident Response
+  - MDR for Splunk Enterprise
+  seller_name: BlueVoyant
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=BlueVoyant
+  listing_count: 8
+  apps:
+  - BlueVoyant AI
+  - Microsoft Copilot for Security Automated Readiness Assessment
+  - BlueVoyant Deployment Services for Microsoft Security Tools
+  - Watchtower by BlueVoyant
+  - Identity Security Posture by BlueVoyant
+  seller_name: BlueVoyant
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=BlueVoyant%20UK
+  listing_count: 1
+  apps:
+  - BlueVoyant AI
+  seller_name: BlueVoyant UK
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
